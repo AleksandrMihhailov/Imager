@@ -36,7 +36,6 @@ fromDir = fromDir.join File::Separator
 
 # directory to save result
 toDir = ['..', 'content', 'img'].join File::Separator
-wmFile = "..#{ds}application#{ds}watermarks#{ds}motiva600x600.png"
 
 # watermark
 wm = ['..', 'application', 'watermarks', 'motiva600x600.png']
