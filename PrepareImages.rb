@@ -4,9 +4,12 @@ require 'RMagick'
 require 'Mysql2'
 require 'yaml'
 
+# directory separator
+DS = File::Separator
+
 # load config
 config = ['..', 'application', 'app', 'config.production.yml']
-config = YAML.load_file config.join File::Separator
+config = YAML.load_file config.join DS
 config[:crop] = false
 
 # check RMagick gem
@@ -26,26 +29,26 @@ db = Mysql2::Client.new(
     :host => config['database']['hostname'],
     :username => config['database']['username'],
     :password => config['database']['password'],
-    :database => config['database']['database'],
-    :encoding => config['database']['charset']
+    :database => config['database']['database']
 )
 
 # fabrics main directory
-fromDir = ['..', 'application', 'storage', 'fabrics', 'images']
-fromDir = fromDir.join File::Separator
+fromDir = ['..', 'application', 'storage', 'fabrics', 'images'].join DS
 
 # directory to save result
-toDir = ['..', 'content', 'img'].join File::Separator
+toDir = ['..', 'content', 'img'].join DS
+
+# clear files directory
+filesDir = ['..', 'application', 'files', 'fabrics'].join DS
 
 # watermark
-wm = ['..', 'application', 'watermarks', 'motiva600x600.png']
-wm = wm.join File::Separator
+wm = ['..', 'application', 'watermarks', 'motiva600x600.png'].join DS
 wm = Magick::Image.read(wm).first
 
 # get and start action for each fabric
 fabrics = db.query('select * from fabrics')
 fabrics.each do |fabric|
-    unless Dir.exist? fromDir + ds + fabric['image']
+    unless Dir.exist? fromDir + DS + fabric['image']
 
         puts fabric['image'] + ' ready!'
 
@@ -53,29 +56,29 @@ fabrics.each do |fabric|
         imageName = fabric['image'].split('.')[0]
 
         # init file
-        src = Magick::Image.read(fromDir + ds + fabric['image']).first
+        src = Magick::Image.read(fromDir + DS + fabric['image']).first
 
         # save origin image
-        src.write "..#{ds}application#{ds}files#{ds}fabrics#{ds + imageName}"
+        src.write filesDir + DS + imageName
         
         # thumbnail 60 x 60
         thumbnail60x60 = src.clone
         thumbnail60x60.scale! 60, 60
-        thumbnail60x60.write "#{toDir + ds + imageName}-60x60.#{src.format.downcase}" do
+        thumbnail60x60.write "#{toDir + DS + imageName}-60x60.#{src.format.downcase}" do
             self.quality = 100
         end
         
         # thumbnail 70 x 70
         thumbnail70x70 = src.clone
         thumbnail70x70.scale! 70, 70
-        thumbnail70x70.write "#{toDir + ds + imageName}-70x70.#{src.format.downcase}" do
+        thumbnail70x70.write "#{toDir + DS + imageName}-70x70.#{src.format.downcase}" do
             self.quality = 100
         end
         
         # thumbnail 99 x 99
         thumbnail99x99 = src.clone
         thumbnail99x99.scale! 99, 99
-        thumbnail99x99.write "#{toDir + ds + imageName}-99x99.#{src.format.downcase}" do
+        thumbnail99x99.write "#{toDir + DS + imageName}-99x99.#{src.format.downcase}" do
             self.quality = 100
         end
         
@@ -83,14 +86,14 @@ fabrics.each do |fabric|
         thumbnailBig = src.clone
         thumbnailBig.composite! wm, 0, 0, Magick::OverCompositeOp
         thumbnailBig.crop! 0, 0, 562, 374
-        thumbnailBig.write "#{toDir + ds + imageName}-562x374.#{src.format.downcase}" do
+        thumbnailBig.write "#{toDir + DS + imageName}-562x374.#{src.format.downcase}" do
             self.quality = 100
         end
         
         # medium thumbnail
         thumbnailMedium = thumbnailBig.clone
         thumbnailMedium.scale! 249, 166
-        thumbnailMedium.write "#{toDir + ds + imageName}-249x166.#{src.format.downcase}" do
+        thumbnailMedium.write "#{toDir + DS + imageName}-249x166.#{src.format.downcase}" do
             self.quality = 100
         end
 
