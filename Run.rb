@@ -53,9 +53,15 @@ else
         when '-g'
             puts "\n======= Gallery Action =======\n"
             require './Gallery'
-            Fabrics.new db
+            Gallery.new db
+        when '-p'
+            puts "\n======= Products Action ========\n"
+            require './Products'
+            Products.new db
         when '-m'
-            puts 'Manuals action'
+            puts "\n======= Manuals action =======\n"
+            require './Manuals'
+            Manuals.new db
         when '--help'
             help
         when '-h'

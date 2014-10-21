@@ -10,7 +10,7 @@ class Fabrics < Image
         @db = db
         
         # init wotermark
-        @wm = ['..', 'application', 'watermarks', 'motiva_watermark-600x600.png'].join DS
+        @wm = ['..', 'application', 'watermarks', 'blindex_watermark-600x600.png'].join DS
         unless File.exist? @wm
             puts "WaterMark file not exists (#{@wm})!"
             exit
@@ -22,7 +22,8 @@ class Fabrics < Image
     end
 
     def runFabrics
-        fabrics = @db.query('SELECT image FROM fabrics  WHERE image != \'\'')
+        fabrics = @db.query 'SELECT id, image FROM fabrics  WHERE image != \'\''
+        puts fabrics.count
         fabrics.each do |fabric|
             
             if File.exist? @@fromDir + DS + fabric['image'] then
@@ -39,6 +40,12 @@ class Fabrics < Image
                 thumbnail src, 99, 99, @@toDir, @imageName
                 image src, 562, 374, @@toDir, @imageName
                 thumbnail src, 249, 166, @@toDir, @imageName
+
+                # insert fabric to gallery
+                imageName = @db.escape @imageName
+                imageExt = src.format.downcase
+                @db.query "INSERT INTO gallery (file, ext, type) VALUES('#{imageName}', '#{imageExt}', 'fabric')"
+                @db.query "INSERT INTO fabrics_gallery (fabric_id, gallery_id) VALUES (#{fabric['id']}, #{@db.last_id})"
 
                 # infinite count
                 @@count += 1
