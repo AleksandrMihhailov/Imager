@@ -42,10 +42,10 @@ class Fabrics < Image
                 thumbnail src, 249, 166, @@toDir, @imageName
 
                 # insert fabric to gallery
-                imageName = @db.escape @imageName
-                imageExt = src.format.downcase
-                @db.query "INSERT INTO gallery (file, ext, type) VALUES('#{imageName}', '#{imageExt}', 'fabric')"
-                @db.query "INSERT INTO fabrics_gallery (fabric_id, gallery_id) VALUES (#{fabric['id']}, #{@db.last_id})"
+                #imageName = @db.escape @imageName
+                #imageExt = src.format.downcase
+                #@db.query "INSERT INTO gallery (file, ext, type) VALUES('#{imageName}', '#{imageExt}', 'fabric')"
+                #@db.query "INSERT INTO fabrics_gallery (fabric_id, gallery_id) VALUES (#{fabric['id']}, #{@db.last_id})"
 
                 # infinite count
                 @@count += 1

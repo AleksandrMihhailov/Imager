@@ -34,7 +34,16 @@ class Products
 
                 if src.columns.to_i == 3456 && src.rows.to_i == 5184 then
 
-                    puts row['file'] + '.' + row['ext'] + ' are Okay!'
+                    # resize origin image
+                    img = src.clone.scale! 400, 600
+
+                    #creating blank image
+                    newImg = Magick::Image.new 600, 600 do
+                        self.background_color = 'none'
+                        self.format = 'PNG'
+                    end
+
+                    puts row['file'] + '.' + row['ext'] + ' is Okay!'
                     @@count += 1
                 else
                     @@failCount += 1
