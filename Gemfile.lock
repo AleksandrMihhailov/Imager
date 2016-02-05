@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mysql2 (0.4.2)
+    rmagick (2.15.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  mysql2
+  rmagick
+
+BUNDLED WITH
+   1.11.2

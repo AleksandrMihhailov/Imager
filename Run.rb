@@ -46,6 +46,12 @@ else
     # get console line arguments
     ARGV.each do |argument|
         case argument
+
+        when '--check-products'
+            puts "\n======= Checking products =======\n"
+            require './ProductsCheck'
+            ProductsCheck.new db
+
         when '-f'
             puts "\n======= Fabrics Action =======\n"
             require './Fabrics'
