@@ -52,6 +52,11 @@ else
             require './ProductsCheck'
             ProductsCheck.new db
 
+        when '--check-materials'
+            puts "\n======= Checking materials =======\n"
+            require './MaterialsCheck'
+            MaterialsCheck.new db
+
         when '-f'
             puts "\n======= Fabrics Action =======\n"
             require './Fabrics'

@@ -27,10 +27,6 @@ class ProductsCheck
     end
   end
 
-  def add_watermark file
-
-  end
-
   def copy_file file, dest
     FileUtils.cp file, dest
   end
@@ -72,6 +68,18 @@ class ProductsCheck
       WHERE products.category_id != 0
       AND gallery.file = '#{fileName}'
       LIMIT 1"
+
+    # @db.query "SELECT 
+    #     products.id,
+    #     gallery.file,
+    #     gallery.ext AS extension
+    #   FROM gallery
+    #   LEFT JOIN products_gallery
+    #   ON gallery.id = products_gallery.gallery_id
+    #   LEFT JOIN products
+    #   ON products.id = products_gallery.product_id
+    #   WHERE gallery.file = '#{fileName}'
+    #   LIMIT 1"
 
   end
 

@@ -16,6 +16,8 @@ class Watermark
     :wm_blindex_900x600_v1_1   => [@@wm_path, 'wm_blindex_900x600_v1-1.png'].join(DS),
     :wm_blindex_1280x1920_v1_1 => [@@wm_path, 'wm_blindex_1280x1920_v1-1.png'].join(DS),
     :wm_blindex_1920x1280_v1_1 => [@@wm_path, 'wm_blindex_1920x1280_v1-1.png'].join(DS),
+    :wm_blindex_1280x1920_v2_1 => [@@wm_path, 'wm_blindex_1280x1920_v2-1.png'].join(DS),
+    :wm_blindex_1920x1280_v2_1 => [@@wm_path, 'wm_blindex_1920x1280_v2-1.png'].join(DS),
     :wm_blindex_3456x5184_v1_1 => [@@wm_path, 'wm_blindex_3456x5184_v1-1.png'].join(DS),
     :wm_blindex_5184x3456_v1_1 => [@@wm_path, 'wm_blindex_5184x3456_v1-1.png'].join(DS)
   }
@@ -35,7 +37,7 @@ class Watermark
       # working with product
       if image.columns.to_i == 1280 && image.rows.to_i == 1920
         
-        watermark = Magick::Image.read(@@wm[:wm_blindex_1280x1920_v1_1]).first
+        watermark = Magick::Image.read(@@wm[:wm_blindex_1280x1920_v2_1]).first
 
         # blank image
         blank = Magick::Image.new 1920, 1920 do
@@ -51,21 +53,21 @@ class Watermark
 
         # scaling and saving thumbnail 99x99
         thumb = blank.clone.scale! 99, 99
-        thumb.write [dest_path, "#{file_hash[:filename]}_99x99.#{file_hash[:extension]}"].join File::Separator do
+        thumb.write [dest_path, "#{file_hash[:filename]}-99x99.#{file_hash[:extension]}"].join File::Separator do
           self.quality = 100
         end
         thumb.destroy!
 
         # scaling and saving thumbnail 70x70
         thumb = blank.clone.scale! 70, 70
-        thumb.write [dest_path, "#{file_hash[:filename]}_70x70.#{file_hash[:extension]}"].join File::Separator do
+        thumb.write [dest_path, "#{file_hash[:filename]}-70x70.#{file_hash[:extension]}"].join File::Separator do
           self.quality = 100
         end
         thumb.destroy!
 
         # scaling and saving thumbnail 60x60
         thumb = blank.clone.scale! 60, 60
-        thumb.write [dest_path, "#{file_hash[:filename]}_60x60.#{file_hash[:extension]}"].join File::Separator do
+        thumb.write [dest_path, "#{file_hash[:filename]}-60x60.#{file_hash[:extension]}"].join File::Separator do
           self.quality = 100
         end
         thumb.destroy!
@@ -74,26 +76,26 @@ class Watermark
         image.composite! watermark, 0, 0, Magick::OverCompositeOp
 
         # saving image with original size
-        image.write [dest_path, "#{file_hash[:filename]}_1280x1920.#{file_hash[:extension]}"].join File::Separator do
+        image.write [dest_path, "#{file_hash[:filename]}-1280x1920.#{file_hash[:extension]}"].join File::Separator do
           self.quality = 100
         end
 
         # scaling and saving image with zoom size
         img = image.clone.scale! 600, 900
-        img.write [dest_path, "#{file_hash[:filename]}_600x900.#{file_hash[:extension]}"].join File::Separator do
+        img.write [dest_path, "#{file_hash[:filename]}-600x900.#{file_hash[:extension]}"].join File::Separator do
           self.quality = 100
         end
         img.destroy!
 
         # scaling and saving image with product item size
         img = image.clone.scale! 374, 562
-        img.write [dest_path, "#{file_hash[:filename]}_374x562.#{file_hash[:extension]}"].join File::Separator do
+        img.write [dest_path, "#{file_hash[:filename]}-374x562.#{file_hash[:extension]}"].join File::Separator do
           self.quality = 100
         end
         img.destroy!
 
         img = image.clone.scale! 166, 249
-        img.write [dest_path, "#{file_hash[:filename]}_166x249.#{file_hash[:extension]}"].join File::Separator do
+        img.write [dest_path, "#{file_hash[:filename]}-166x249.#{file_hash[:extension]}"].join File::Separator do
           self.quality = 100
         end
         img.destroy!
