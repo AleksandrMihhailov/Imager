@@ -119,6 +119,104 @@ class Watermark
     end
   end
 
+  def add_watermark_to_material dest_path, file_data
+    if file.exist? file_data[:file][:file]
+
+      image = Magick::Image.read(file_data[:file][:file]).first
+
+      if image.columns.to_i == 5184 and image.rows.to_i == 3456
+
+        image.scale! 1280, 1920
+        watermark = Magick::Image.read(@@wm[:wm_blindex_1280x1920_v1_1]).first
+
+        blank = Magick::Image.new 1920, 1920 do
+          self.background_color = 'none'
+          self.format = 'PNG'
+        end
+
+        blank.composite! image, 0, 320, Magick::OverCompositeOp
+
+        # scaling to 99x99
+        thumb = blank.clone.scale! 99, 99
+        thumb.write [dest_path, "#{file_data[:db]['file']}-99x99.#{file_data[:db]['ext']}"].join(File::Separator) do
+          self.quality = 100
+        end
+        thumb.destroy!
+
+        # scaling to 70x70
+        thumb = blank.clone.scale! 70, 70
+        thumb.write [dest_path, "#{file_data[:db]['file']}-70x70.#{file_data[:db]['ext']}"].join(File::Separator) do
+          self.quality = 100
+        end
+        thumb.destroy!
+
+        # scale to 60x60
+        thumb = blank.clone.scale! 60, 60
+        thumb.write [det_path, "#{file_data[:db]['file']}-60x60.#{file_data[:db]['ext']}"].join(File::Separator) do
+          self.quality = 100
+        end
+        thumb.destroy!
+
+        # making watermar on image
+        image.composite! watermark, 0, 0, Magick::OverCompositeOp
+
+        # original image
+        image.write [dest_path, "#{file_data[:db]['file']}-1920x1280.#{file_data[:db]['ext']}"].join(File::Separator) do
+          self.quality = 100
+        end
+
+        # zoom image
+        img = image.clone.scale! 900, 600
+        img.write [dest_path, "#{file_data[:db]['file']}-900x600.#{file_data[:db]['ext']}"].join(File::Separator) do
+          self.quality = 100
+        end
+        img.destroy!
+
+        # normal material size scaling
+        img = image.clone.scale! 562, 374
+        img.write [dest_path, "#{file_data[:db]['file']}-562x374.#{file_data[:db]['ext']}"].join(File::Separator) do
+          self.quality = 100
+        end
+        img.destroy!
+
+        # and more another image with watermark
+        img = image.clone.scale! 249, 166
+        img.write [dest_path, "#{file_data[:db]['file']}-249x166.#{file_data[:db]['ext']}"].join(File::Separator) do
+          self.quality = 100
+        end
+        img.destroy!
+
+        # distroying main and blank image
+        image.destroy!
+        blank.destroy!
+
+        puts "#{file_data[:file][:file]} processed!"
+
+      elsif image.columns.to_i == 600 or image.rows.to_i == 600
+
+        # processing 600 and 600
+        if image.columns.to_i == 600 and image.rows.to_i == 600
+          puts 'Image 600 and 600'
+        end
+
+        # processing 600 and <600
+        if image.columns.to_i == 600 and image.rows.to_i < 600
+          puts 'Image 600 and <600'
+        end
+
+        # processing <600 and 600
+        if image.columns.to_i < 600 and image.rows.to_i == 600
+          puts 'Image <600 and 600'
+        end
+
+      else
+        puts "\t#{file[:file][:file]} not processed!"
+      end
+    else
+      puts "File #{file_data[:file][:file]} not found! Sry!"
+    end
+  end
+
   def check_watermarks
     puts "\n======= Checking watermark files =======\n"
     exist = 0

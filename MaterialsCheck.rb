@@ -1,12 +1,6 @@
 require 'fileutils'
 require './Watermark'
 
-class Array
-  def except *values
-    self - values
-  end
-end
-
 class MaterialsCheck
 
   def initialize db
@@ -50,14 +44,17 @@ class MaterialsCheck
 
     Dir.glob("*").each do |f|
       if file_names.include? f.split('.').first
-        puts "#{f} - Okay" if @log
+        puts "#{f} :: #{(File.size(f).to_f / 2**20).round(2)} mb"
         result.push f
-        #puts Dir.pwd
-        #FileUtils.cp f, ['..', 'materials', f].join(File::Separator)
       else
         puts "#{f} - Fail" if @log
-        except.push f
       end
+    end
+
+    Dir.chdir '../../Imager'
+
+    result.each do |f|
+      FileUtils.cp [@fromDir, f].join(File::Separator), [@originDir, f].join(File::Separator)
     end
 
     puts "Good counter: #{result.count}" if @log

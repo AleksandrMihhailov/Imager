@@ -1,0 +1,376 @@
+
+======= Processing Materials =======
+Materials files count: 5878
+DB Materials count: 1711
+Result count: 1709
+
+======= Checking watermark files =======
+wm_blindex_60x60_v1_1 Okay
+wm_blindex_70x70_v1_1 Okay
+wm_blindex_99x99_v1_1 Okay
+wm_blindex_166x249_v1_1 Okay
+wm_blindex_249x166_v1_1 Okay
+wm_blindex_374x562_v1_1 Okay
+wm_blindex_562x374_v1_1 Okay
+wm_blindex_600x600_v1_1 Okay
+wm_blindex_600x800_v1_1 Okay
+wm_blindex_800x600_v1_1 Okay
+wm_blindex_600x900_v1_1 Okay
+wm_blindex_900x600_v1_1 Okay
+wm_blindex_1280x1920_v1_1 Okay
+wm_blindex_1920x1280_v1_1 Okay
+wm_blindex_1280x1920_v2_1 Okay
+wm_blindex_1920x1280_v2_1 Okay
+wm_blindex_3456x5184_v1_1 Okay
+wm_blindex_5184x3456_v1_1 Okay
+
+======= Watermarks exist: 18, not exist: 0, total checked: 18 =======
+
+Berlin Orange 0100-6420 => 3706 => 1920x1080
+Sticks 49481-1 => 2206 => 555x600
+Vermicelli 49523-1 => 2207 => 557x600
+Crush Uni White 526 => 2504 => 600x134
+Crush Uni Stone White 527 => 2505 => 600x138
+Crush Uni Light Yellow 528 => 2506 => 600x134
+Crush Uni Yellow 529 => 2507 => 600x139
+Crush Uni Light Brown 536 => 2508 => 600x133
+Crush Uni Grey Brown 534 => 2509 => 600x132
+Crush Uni Grey 531 => 2510 => 600x135
+Crush Uni Brown 535 => 2511 => 600x133
+Crush Uni Plum 522 => 2512 => 600x135
+Crush Uni Violet 538 => 2513 => 600x134
+Crush Uni Purple 532 => 2514 => 600x141
+Crush Uni Red 533 => 2515 => 600x132
+Crush Uni Green 537 => 2516 => 600x135
+Crush Uni Dark Blue 539 => 2517 => 600x137
+Crush Perlmutt White 982 => 2518 => 600x209
+Crush Perlmutt Crema 966 => 2519 => 600x208
+Crush Perlmutt Popcorn 961 => 2520 => 600x206
+Crush Perlmutt Teint 968 => 2521 => 600x207
+Crush Perlmutt Beige 951 => 2522 => 600x208
+Crush Perlmutt Biscuit 953 => 2523 => 600x206
+Crush Perlmutt Jade 956 => 2524 => 600x205
+Crush Perlmutt Fern 963 => 2525 => 600x208
+Crush Perlmutt Apple Green 969 => 2526 => 600x212
+Crush Perlmutt Peach 977 => 2527 => 600x209
+Crush Perlmutt Cooper 954 => 2528 => 600x213
+Crush Perlmutt Orange 976 => 2529 => 600x207
+Crush Perlmutt Light Blue 965 => 2530 => 600x210
+Crush Perlmutt Azure 970 => 2531 => 600x213
+Crush Perlmutt Torquois 971 => 2532 => 600x215
+Crush Perlmutt Pink 960 => 2533 => 600x214
+Crush Perlmutt Chestnut 952 => 2534 => 600x208
+Crush Perlmutt Amethyst 974 => 2535 => 600x214
+Montreal White 750-7510 => 2536 => 600x181
+Montreal Beige 750-7513 => 2537 => 600x175
+Montreal Dark Brown 750-7515 => 2538 => 600x174
+Montreal Purple 750-7521 => 2539 => 600x178
+Montreal Grey 750-7520 => 2540 => 600x175
+Montreal Green 750-7527 => 2541 => 600x175
+Montreal BO White 760-7610 => 2542 => 600x181
+Montreal BO Beige 760-7613 => 2543 => 600x175
+Montreal BO Dark Brown 760-7615 => 2544 => 600x174
+Montreal BO Purple 760-7621 => 2545 => 600x178
+Montreal BO Grey 760-7620 => 2546 => 600x175
+Montreal BO Green 760-7627 => 2547 => 600x175
+Calgary Ivory 520-5202 => 2548 => 600x179
+Calgary Beige 520-5206 => 2549 => 600x168
+Calgary Anthrazite 520-5207 => 2550 => 600x174
+Calgary Blue 520-5204 => 2551 => 600x177
+Mist White 3070-008 => 2552 => 600x215
+Mist Off White 3070-601 => 2553 => 600x215
+Mist Cream 3070-602 => 2554 => 600x213
+Mist Sand 3070-603 => 2555 => 600x213
+Mist Ochre 3070-604 => 2556 => 600x212
+Mist Brown 3070-605 => 2557 => 600x213
+Mist Black 3070-009 => 2558 => 600x217
+Mist Light Orange 3070-401 => 2559 => 600x217
+Mist Yellow 3070-402 => 2560 => 600x222
+Mist Orange 3070-403 => 2561 => 600x222
+Mist Terracotta 3070-404 => 2562 => 600x217
+Mist Dark Red 3070-103 => 2563 => 600x222
+Mist Wine Red 3070-102 => 2564 => 600x222
+Mist Rose 3070-101 => 2565 => 600x224
+Mist Light Grey 3070-501 => 2567 => 600x213
+Mist Grey 3070-502 => 2568 => 600x222
+Mist Blue Grey 3070-201 => 2569 => 600x215
+Mist Dark Blue 3070-202 => 2570 => 600x214
+Mist Purple 3070-701 => 2571 => 600x220
+Mist Green 3070-301 => 2572 => 600x219
+Mist Perl White 3085-008 => 2573 => 600x137
+Mist Perl Off White 3085-621 => 2574 => 600x134
+Mist Perl Cream 3085-622 => 2575 => 600x137
+Mist Perl Ochre 3085-624 => 2576 => 600x132
+Mist Light Orange 3085-421 => 2577 => 600x134
+Mist Perl Grey 3085-522 => 2578 => 600x134
+Mist Perl Grey Blue 3085-211 => 2579 => 600x135
+Somnio Perlmutt BO Yellow 770 => 2580 => 600x136
+Somnio Perlmutt BO Red 772 => 2581 => 600x134
+Somnio Perlmutt BO Blue 774 => 2582 => 600x137
+Somnio Perlmutt BO Violet 712 => 2583 => 600x132
+Somnio Perlmutt BO Black 775 => 2584 => 600x136
+Somnio Perlmutt BO Grey 763 => 2585 => 600x133
+Somnio Perlmutt BO White 761 => 2586 => 600x132
+Somnio Perlmutt BO Light Green 762 => 2587 => 600x132
+Somnio Perlmutt BO Apple Green 769 => 2588 => 600x135
+Somnio Perlmutt BO Smaragd 773 => 2589 => 600x136
+Glitter BO Grey 286 => 2590 => 600x134
+Glitter BO Beige 287 => 2591 => 600x136
+Glitter BO Terracotta 285 => 2592 => 600x136
+Moon BO White 80468-7639 => 2593 => 600x134
+Moon BO Grey 80468-7642 => 2594 => 600x132
+Moon BO Cream 80468-7640 => 2595 => 600x135
+Moon BO Beige 80468-7641 => 2596 => 600x124
+Moon BO Brown 80468-7573 => 2597 => 600x137
+Moon BO Yellow 80468-7643 => 2598 => 600x131
+Moon BO Green 80468-7644 => 2599 => 600x129
+Moon BO Rust 80468-7645 => 2600 => 600x128
+Moon BO Fuchsia 80468-7646 => 2601 => 600x134
+Moon BO Navy 80468-7647 => 2602 => 600x129
+Palado Perlmutt Apricot 261 => 2607 => 600x210
+Palado Perlmutt Yellow 263 => 2608 => 600x212
+Palado Perlmutt Citreous 267 => 2609 => 600x212
+Palado Perlmutt Sun Yellow 264 => 2610 => 600x215
+Palado Perlmutt White 260 => 2611 => 600x209
+Palado Perlmutt Brown 271 => 2612 => 600x203
+Palado Perlmutt Pastel Green 265 => 2613 => 600x209
+Palado Perlmutt Blue 274 => 2614 => 600x212
+Palado Perlmutt Rose 266 => 2615 => 600x214
+Palado Perlmutt Purple 273 => 2616 => 600x207
+Palado Perlmutt Black 272 => 2617 => 600x208
+Palado Perlmutt Fuschia 270 => 2618 => 600x208
+Metalic White 80436-7350 => 2619 => 600x136
+Metalic Grey 80436-7353 => 2620 => 600x136
+Metalic Graphite 80436-7351 => 2621 => 600x132
+Metalic Beige 80436-7354 => 2622 => 600x137
+New York Silver 201-7199 => 2623 => 600x139
+Frankfurt Silver 101-7099 => 2624 => 600x138
+Dimout Perlmutt Light Blue 896  => 2625 => 600x138
+Dimout Perlmutt Blue 888 => 2626 => 600x133
+Dimout Perlmutt Rose 894 => 2627 => 600x134
+Dimout Perlmutt Grey 889 => 2628 => 600x133
+Dimout Perlmutt Beige 898 => 2629 => 600x136
+Dimout Perlmutt White 890 => 2630 => 600x135
+Dimout Perlmutt Light Beige 892 => 2631 => 600x151
+Dimout Perlmutt Apricot 893 => 2632 => 600x138
+Dimout Perlmutt Sun Yellow 886 => 2633 => 600x135
+Dimout Perlmutt Orange 885 => 2634 => 600x133
+Sunrise White 0321 => 2635 => 600x213
+Sunrise Grey 0327 => 2636 => 600x213
+Sunrise Beige 0322 => 2637 => 600x211
+Sunrise Dark Grey 0328 => 2638 => 600x213
+Sunrise Ivory 0320 => 2639 => 600x210
+Sunrise Marine 0325 => 2640 => 600x214
+Para Perlmutt White 450 => 2641 => 600x130
+Para Perlmutt Beige 451 => 2642 => 600x132
+Para Perlmutt Yellow 453 => 2643 => 600x132
+Para Perlmutt Purple 456 => 2644 => 600x132
+Para Perlmutt Grey 454 => 2645 => 600x134
+Para Perlmutt Blue 457 => 2646 => 600x127
+Curly Pearl Vanilla SCP-PL-972 => 2647 => 600x128
+Curly Pearl White SCP-PL-901 => 2648 => 600x130
+California Ivory 820095-1 => 2649 => 600x124
+California Brown 820095-2 => 2650 => 600x130
+California Graphite 820095-3 => 2651 => 600x132
+Sofia Honey 8411 => 2652 => 600x134
+Sofia Black/Lavender 8402 => 2653 => 600x137
+Linien White 425 => 2654 => 600x139
+Linien Grey 424 => 2655 => 600x135
+Linien Dark Grey 428 => 2656 => 600x138
+Linien Rose 423 => 2657 => 600x136
+Linien Beige 416 => 2658 => 600x134
+Linien Brown 419 => 2659 => 600x136
+Stickan White 912667-8-602-81 => 2660 => 600x136
+Stickan Yellow 912667-8-602-61 => 2661 => 600x142
+Regency Calico 182-0541 => 2662 => 600x137
+Regency Pebble 182-0844 => 2663 => 600x137
+Madrid Crystal 135-1590 => 2664 => 600x136
+Madrid Cornsilk 135-1441 => 2665 => 600x132
+Leipzig Linen/Gold 8555 => 2666 => 600x139
+Leipzig White/Silver 8550 => 2667 => 600x139
+Paris Brown 406-2303 => 2668 => 600x210
+Paris Light Yellow 406-2304 => 2669 => 600x205
+Paris Light Salmon 406-2306 => 2670 => 600x203
+Dots Pearl Green/Yellow 411-2873 => 2671 => 600x206
+Dots Pearl Turquoise/Green 411-2871 => 2672 => 600x218
+Dots Pearl Rose/White 411-2876 => 2673 => 600x193
+Shangai Gold 910-9102 => 2674 => 600x207
+Shangai Green 910-9104 => 2675 => 600x215
+Shangai Red 910-9103 => 2676 => 600x211
+Sinai Off White 811-8202 => 2677 => 600x212
+Sinai Rose 811-8204 => 2678 => 600x226
+Sinai Blue 811-8203 => 2679 => 600x216
+Circles Red 410-2621 => 2680 => 600x131
+Flowers Green 410-2610 => 2681 => 600x131
+Copenhagen Terra/Mix 410-2503 => 2682 => 600x135
+Copenhagen Blue/Mix 410-2502 => 2683 => 600x137
+Checked Pearl Yellow 411-2843 => 2684 => 600x134
+Checked Pearl Light Blue 411-2841 => 2685 => 600x136
+Barisi Creme 206 => 2700 => 600x140
+Barisi Grey 209 => 2701 => 600x135
+Barisi Ocher 207 => 2702 => 600x140
+Barisi Brown 208 => 2703 => 600x135
+Stria Calico 196-54-41 => 2704 => 600x132
+Stria Poplin 196-56-43 => 2705 => 600x135
+Stria Parchment 196-55-45 => 2706 => 600x137
+Brokat Cooper 127 => 2707 => 600x132
+Brokat Anthrazite 128 => 2708 => 600x140
+Arela White/Beige 441 => 2709 => 600x123
+Terrano Light Brown 482 => 2710 => 600x136
+Terrano White 481 => 2711 => 600x136
+Pique White 605 => 2712 => 600x131
+Pique Dark Brown 608 => 2713 => 600x137
+Jaipur Light Beige 614-6201 => 2714 => 600x137
+Jaipur Light Brown 614-6202 => 2715 => 600x141
+Jaipur Rose 614-6251 => 2716 => 600x137
+Jaipur Dark Grey 614-6205 => 2717 => 600x134
+Crepe Design Beige CRB-PL-958 => 2718 => 600x139
+Crepe Design Brown CRB-PL-954 => 2719 => 600x123
+Crepe Design Grey/Black CRB-PL-952 => 2720 => 600x137
+Crepe Design Black/Grey CRB-PL-953 => 2721 => 600x130
+Vicenza Print Mix 820078-1 => 2722 => 600x128
+Vicenza Print Mix 820078-2 => 2723 => 600x132
+Marquisette Design Brown MAB-PL-912 => 2724 => 600x125
+Marquisette Design Yellow MAB-PL-913 => 2725 => 600x121
+Spring 016 => 3168 => 600x502
+Spring 002 => 3169 => 600x525
+Spring 003 => 3170 => 600x553
+Spring 011 => 3171 => 550x600
+Spring 015 => 3172 => 522x600
+Spring 013 => 3173 => 489x600
+Spring 030 => 3174 => 507x600
+Spring 018 => 3176 => 488x600
+Spring 021 => 3177 => 487x600
+Spring 006 => 3178 => 481x600
+Spring 025 => 3179 => 414x600
+Natural 170 => 3180 => 447x600
+Natural 171 => 3181 => 432x600
+Natural 172 => 3182 => 416x600
+Nutra 301 => 3183 => 488x600
+Nutra 302 => 3184 => 450x600
+Nutra 303 => 3185 => 457x600
+Nutra 306 => 3186 => 433x600
+Nutra 309 => 3187 => 401x600
+Nuria 442 => 3194 => 470x600
+Nuria 441 => 3195 => 453x600
+Nuria 440 => 3196 => 386x600
+25-0003 => 3197 => 600x482
+25-0043 => 3198 => 600x482
+25-0115 => 3199 => 600x482
+25-0117 => 3200 => 600x482
+25-0164 => 3201 => 600x482
+25-0165 => 3202 => 600x482
+25-0168 => 3203 => 600x482
+25-0172 => 3204 => 600x473
+25-0179 => 3205 => 600x482
+25-0186 => 3206 => 600x482
+25-0187 => 3207 => 600x482
+25-0195 => 3209 => 600x482
+25-0199 => 3210 => 600x482
+25-0205 => 3211 => 600x482
+25-0210 => 3212 => 600x482
+25-0211 => 3213 => 600x482
+25-0212 => 3214 => 600x482
+25-0423 => 3215 => 600x482
+25-0475 => 3216 => 600x482
+25-0490 => 3217 => 600x482
+25-0491 => 3218 => 600x482
+25-0511 => 3219 => 600x482
+25-0517 => 3220 => 600x482
+25-0518 => 3221 => 600x482
+25-0522 => 3222 => 600x482
+25-0538 => 3223 => 600x482
+25-0705 => 3224 => 600x482
+25-0760 => 3225 => 600x482
+25-0776 => 3226 => 600x482
+25-0900 => 3227 => 600x482
+25-1037 => 3228 => 600x482
+25-1926 => 3229 => 600x482
+25-2000 => 3230 => 600x482
+25-2005 => 3231 => 600x482
+25-2007 => 3232 => 600x482
+25-2017 => 3233 => 600x482
+25-3550 => 3234 => 600x482
+25-4417 => 3235 => 600x482
+25-6603 => 3236 => 600x482
+25-7162 => 3237 => 600x482
+25-210-211 => 3238 => 600x482
+25-A412 => 3239 => 600x482
+25-A466 => 3240 => 600x482
+25-7325 B => 3241 => 600x482
+25-7332 B => 3242 => 600x482
+25-7344 B => 3243 => 600x482
+25-7346 B => 3244 => 600x482
+25-2082 W => 3245 => 600x482
+25-2085 W => 3246 => 600x482
+25-2093 W => 3247 => 600x482
+25-2095 W => 3248 => 600x482
+25-0150 P => 3249 => 600x482
+25-1858 P => 3250 => 600x482
+25-4806 P => 3251 => 600x482
+25-7010 P => 3252 => 600x482
+25-S576 T => 3253 => 600x482
+16-0003 => 3254 => 600x482
+16-0115 => 3255 => 600x482
+16-0172 => 3256 => 600x473
+16-0199 => 3257 => 600x482
+16-0205 => 3258 => 600x482
+16-0210 => 3259 => 600x482
+16-0211 => 3260 => 600x482
+16-0423 => 3261 => 600x482
+16-0511 => 3262 => 600x482
+16-0576 => 3263 => 600x482
+16-0885 => 3264 => 600x482
+16-0900 => 3265 => 600x482
+16-1926 => 3266 => 600x482
+16-6603 => 3267 => 600x482
+16-0049 R => 3268 => 600x482
+25-0159 => 3269 => 600x450
+25-0281 => 3270 => 600x450
+25-2083 => 3271 => 600x450
+16-2083 => 3272 => 600x450
+Bamboo 50 mm 50-201 Natural => 3318 => 600x221
+Bamboo 50 mm 50-202 Oak => 3319 => 600x221
+Bamboo 50 mm 50-203 Cherry Wood => 3320 => 600x221
+Bamboo 50 mm 50-204 Tiger Eye => 3321 => 600x221
+Bamboo 50 mm 50-206 Bleached White => 3322 => 600x221
+Bamboo 50mm 50-205 Mahogany => 3323 => 600x221
+Basswood Exclusive BE50-101 BE White => 3324 => 600x221
+Basswood Exclusive BE50-103 BE Ivory => 3325 => 600x220
+Basswood Solid Wood 50 mm 5010 Natural => 3327 => 600x221
+Basswood Solid Wood 50 mm 5011 Maple => 3328 => 600x221
+Basswood Solid Wood 50 mm 5012 Light Oak => 3329 => 600x221
+Basswood Solid Wood 50 mm 5013 Cherry Wood => 3330 => 600x221
+Basswood Solid Wood 50 mm 5014 Tiger Eye => 3331 => 600x221
+Basswood Solid Wood 50 mm 5015 Mahogany => 3332 => 600x221
+Basswood Solid Wood 50 mm 5016 Bleached White => 3333 => 600x221
+Basswood Solid Wood 50 mm 5020 White => 3334 => 600x221
+Basswood Solid Wood 50 mm 5021 Black => 3335 => 600x221
+Basswood Solid Wood 50 mm 5022 Ebony => 3336 => 600x221
+Basswood Solid Wood 50 mm 5023 Dark Mahogany => 3337 => 600x221
+Basswood Solid Wood 50 mm 5024 Nut => 3338 => 600x221
+Bamboo 25 mm 25-201 Natural => 3339 => 600x104
+Bamboo 25 mm 25-202 Oak => 3340 => 600x104
+Bamboo 25 mm 25-203 Cherry Wood => 3341 => 600x104
+Bamboo 25 mm 25-204 Tiger Eye => 3342 => 600x104
+Bamboo 25 mm 25-205 Mahogany => 3343 => 600x104
+Bamboo 25 mm 25-206 Bleached White => 3344 => 600x104
+Basswood Solid Wood 25 mm 2510 Natural => 3345 => 600x104
+Basswood Solid Wood 25 mm 2511 Maple => 3346 => 600x104
+Basswood Solid Wood 25 mm 2512 Light Oak => 3347 => 600x104
+Basswood Solid Wood 25 mm 2513 Cherry Wood  => 3348 => 600x104
+Basswood Solid Wood 25 mm 2514 Tiger Eye => 3349 => 600x104
+Basswood Solid Wood 25 mm 2515 Mahogany => 3350 => 600x104
+Basswood Solid Wood 25 mm 2516 Bleached White => 3351 => 600x104
+Basswood Solid Wood 25 mm 2520 White => 3352 => 600x104
+Basswood Solid Wood 25 mm 2521 Black => 3353 => 600x104
+Basswood Solid Wood 25 mm 2522 Ebony => 3354 => 600x104
+Basswood Solid Wood 25 mm 2523 Dark Mahogany => 3355 => 600x104
+Basswood Solid Wood 25 mm 2524 Nut => 3356 => 600x104
+Nuria 443 => 3425 => 559x600
+Nuria 444 => 3426 => 571x600
+Aroso 473 => 3427 => 586x600
+Aroso 475 => 3428 => 583x600
+Diamond 160 => 3430 => 600x541
+Diamond 162 => 3431 => 600x544
+Count: 347

@@ -57,6 +57,16 @@ else
             require './MaterialsCheck'
             MaterialsCheck.new db
 
+        when '--materials-hunter'
+            puts "\n======= Materials Hunter =======\n"
+            require './MaterialsHunter'
+            MaterialsHunter.new db
+
+        when '--process-materials'
+            puts "\n======= Processing Materials =======\n"
+            require './ProcessMaterials'
+            ProcessMaterials.new db
+
         when '-f'
             puts "\n======= Fabrics Action =======\n"
             require './Fabrics'
