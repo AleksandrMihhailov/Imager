@@ -111,7 +111,7 @@ class ProductsCheck
       end
     end
 
-    Dir.chdir '../../Imager'
+    Dir.chdir '../../blindex-imager'
     
     puts "Files found: #{counter}" if @log
 

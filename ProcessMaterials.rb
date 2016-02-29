@@ -7,19 +7,14 @@ class ProcessMaterials
 
     @hunter = MaterialsHunter.new db
     @wm = Watermark.new
-    @origin_dir = ['..', 'storage', 'origin', 'materials'].join File::Separator
+    @origin_dir = ['..', 'storage', 'origin', 'materials'].join(File::Separator)
 
-    bad_ids = Array.new
+    dest_path = ['..', 'storage', 'public', 'materials'].join(File::Separator)
+    origin_path = ['..', 'storage', 'origin', 'materials'].join(File::Separator)
+
     @hunter.get_result.each do |file|
-      image = Magick::Image.read(file[:file][:file]).first
-      #puts "#{file[:file][:file]} => #{image.columns}x#{image.rows}"
-      unless (image.columns.to_i == 600 && image.rows.to_i == 600) or (image.columns.to_i == 5184 && image.rows.to_i == 3456)
-        puts "#{file[:db]['code']} => #{file[:db]['id']} => #{image.columns}x#{image.rows}"
-        bad_ids.push file[:db]['id']
-      end
-      image.destroy!
+      FileUtils.cp file[:file][:file], [origin_path, "#{file[:file][:name]}.#{file[:file][:extension]}"].join(File::Separator)
+      @wm.add_watermark_to_material dest_path, file
     end
-    puts "Count: #{bad_ids.count}"
-
   end
 end
